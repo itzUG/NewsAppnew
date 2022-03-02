@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/mainlayout"
+    android:background="#7C636060"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+      android:orientation="horizontal"
+       android:id="@+id/lout">
+
+
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:text="signin"
+          android:id="@+id/signinpage"
+          android:layout_margin="5dp">
+      </Button>
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:layout_margin="5dp"
+          android:id="@+id/signuppage"
+          android:text="signup">
+      </Button>
+   </LinearLayout>
+
+
+   <androidx.fragment.app.FragmentContainerView
+       android:id="@+id/fliout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginTop="70dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/lout">
+
+   </androidx.fragment.app.FragmentContainerView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

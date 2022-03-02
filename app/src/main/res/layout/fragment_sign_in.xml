@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/lout"
+    android:background="@drawable/fragbg"
+    android:paddingLeft="10dp"
+    android:layout_height="match_parent"
+    tools:context=".SignInFragment">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="286dp"
+        android:layout_height="79dp"
+        android:text="Sign Into Your Account"
+        android:textColor="#D50000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/email"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signinemail"
+            android:textColorHint="@color/black"
+            android:textStyle="bold"
+            android:hint="Enter Your Email"
+            android:inputType="textEmailAddress">
+
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:hintTextColor="@color/black"
+        android:id="@+id/password"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        app:passwordToggleEnabled="true">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signinpassword"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        android:hint="Enter Your Password">
+
+    </EditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/forgotpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Forgot Password"
+        android:textColor="#D50000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Login With"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        android:textColor="@color/black"
+        android:layout_marginTop="60dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintVertical_bias="0.518">
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/fbgoogle"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toBottomOf="@id/password">
+
+        <ImageView
+            android:id="@+id/fblogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/fb"></ImageView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginRight="100dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/google"
+            android:id="@+id/googlelogin"
+            android:layout_weight="1">
+
+        </ImageView>
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="424dp"
+        android:id="@+id/registeringuser"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:text="Dont Have Account?? Regester Now"
+        android:textColor="#d50000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fbgoogle"
+        android:textSize="18dp"
+        android:layout_marginTop="15dp"
+        tools:layout_editor_absoluteX="-8dp"
+        tools:layout_editor_absoluteY="512dp">
+
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/loginuser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/lowerbutton">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="LOGIN"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:gravity="center">
+        </TextView>
+    </RelativeLayout>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

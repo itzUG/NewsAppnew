@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "807154259106",
+    "project_id": "quantuminternshala",
+    "storage_bucket": "quantuminternshala.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807154259106:android:31f84f8968925af6acb3fb",
+        "android_client_info": {
+          "package_name": "com.example.qunatuminternshala"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "807154259106-mionf0s52had18dfh4p0dp9c6mtark43.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgj_GTra-sGWRpyc16yk3Q6AkXVa1K4mY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "807154259106-mionf0s52had18dfh4p0dp9c6mtark43.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
